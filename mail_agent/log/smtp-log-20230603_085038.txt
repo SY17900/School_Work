@@ -1,0 +1,23 @@
+request:HELO test
+response:
+250-newxmesmtplogicsvrszc2-1.qq.com-11.176.196.21-47605676
+250-SIZE 73400320
+250 OK
+
+log in to the mail server
+response:
+235 Authentication successful
+
+sender:2332681550@qq.com
+response:
+250 OK
+
+receiver:xzq_official@bupt.edu.cn
+response:
+250 OK
+
+message sent already!
+request:QUIT
+response:
+250 OK: queued as.
+

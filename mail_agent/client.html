@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* @import url("https://fonts.googleapis.com/css?family=Lato:200"); */
+    body {
+      text-align:center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url(https://img-blog.csdnimg.cn/d74377ac97c94f9a8850bbd900e1b7e9.jpeg);
+      background-size: cover;
+      background-position: center;
+    }
+label{
+
+cursor: pointer;
+
+display: inline-block;
+
+padding: 3px 6px;
+
+text-align: left;
+
+width: 150px;
+
+vertical-align: top;
+
+}
+    .frosted-glass {
+      position: fixed;
+      top: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 72vw;
+      height: 36vh;
+      box-shadow: 0 0.3px 0.7px rgba(0, 0, 0, 0.126), 0 0.9px 1.7px rgba(0, 0, 0, 0.179), 0 1.8px 3.5px rgba(0, 0, 0, 0.224), 0 3.7px 7.3px rgba(0, 0, 0, 0.277), 0 10px 20px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(20px);
+      transition: 0.5s ease;
+    }
+    .frosted-glass:hover {
+      box-shadow: 0 0.7px 1px rgba(0, 0, 0, 0.157), 0 1.7px 2.6px rgba(0, 0, 0, 0.224), 0 3.5px 5.3px rgba(0, 0, 0, 0.28), 0 7.3px 11px rgba(0, 0, 0, 0.346), 0 20px 30px rgba(0, 0, 0, 0.5);
+    }
+    .frosted-glass .title {
+      padding-left: 0.375em;
+      font-size: 3.6em;
+      font-color: FFFFFF;
+      font-family: Lato, sans-serif;
+      font-weight: 200;
+      letter-spacing: 0.75em;
+      color: white;
+    }
+    @media (max-width: 640px) {
+      .frosted-glass .title {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="frosted-glass">
+   <form method="post" action="http://10.122.205.227:11451/send.php">
+<div>  
+<font color="#FFFFFF">
+<label>From:</label> 
+<input type="text" name="from">
+</div>
+<div>
+<label>To:</label>
+<input type="text" name="to"> 
+</div>   
+<div>  
+<label>Subject:</label>
+<input type="text" name="subject">  
+</div>
+<div>
+<label>Message:</label>  
+<textarea name="message" rows="10" cols="30"></textarea>  
+</div>   
+<button type="submit">Send</button>
+</font>
+</form>
+  </div>
+</body>
+</html>
