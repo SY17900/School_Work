@@ -1,15 +1,17 @@
-# 作业
+# Homework
 
 QaQ
 
-## 内含
-mail_agent：邮件代理服务器  
+## includes
+mail_agent
 
-ie_system：即时通讯系统
+ie_system
 
-netdisk: 网盘
+netdisk
 
-## 关注我！
+compiler-NFA to DFA
+
+## follow me
 **bilibili**：<https://space.bilibili.com/82636109>
 
 
